@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogIn">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="287.0" style="-fx-background-color: #feed01;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="202.0" fitWidth="308.0" layoutX="4.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/AE.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="490.0" style="-fx-background-color: #003176;" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="password" layoutX="171.0" layoutY="308.0" prefHeight="27.0" prefWidth="184.0" promptText="Password" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="188.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/output-onlinepngtools.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="127.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/imageedit_5_8655638356.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="126.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/imageedit_4_9861062292.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="email" layoutX="173.0" layoutY="249.0" prefHeight="29.0" prefWidth="181.0" promptText="Email">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></TextField>
+            <Button fx:id="button" ellipsisString="" layoutX="196.0" layoutY="360.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="35.0" prefWidth="135.0" style="-fx-background-color: #feed01;" text="Log In" textFill="#003176" />
+            <Label id="wrongLogIn" fx:id="wrongLogIn" contentDisplay="CENTER" layoutX="187.0" layoutY="212.0" textFill="RED">
+            
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,49 @@
+.button{
+	-fx-background-color: #feed01;
+}
+
+.button:hover{
+	-fx-background-color: #e3cc00;
+	-fx-border-width: 0px 0px 0px 10px;
+	-fx-border-color: #003176; 
+}
+
+.button:pressed{
+	-fx-background-color:  #003176;
+	-fx-text-fill: white;
+}
+#addcostumer{
+	-fx-background-color: #003176;
+	-fx-text-fill: white;
+}
+
+#addcostumer:hover{
+	-fx-background-color: #8a9bff;
+	
+}
+.green_cell .table-row-cell .text{
+   -fx-fill: green ;
+}
+.table-view {
+    -fx-background-color: #003176;
+    -fx-background-radius:14 14 0 0;
+    
+    }
+.table-view .column-header-background{
+        -fx-background-color:  #003176;
+        -fx-background-radius:14;
+        -fx-background-insets: 0 0 10 0;
+       
+        
+        
+    }
+.table-view .column-header, .table-view .filler{
+        -fx-size:50px;
+        -fx-border-width: 0 0 10 0;
+        -fx-background-color:transparent;
+        
+    }
+    
+.table-view .column-header .label {
+        -fx-text-fill: white ;
+    }

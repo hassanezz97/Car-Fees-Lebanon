@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalculateFees">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="220.0" style="-fx-background-color: #feed01;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="207.0" layoutX="11.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/AE.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-3.0" layoutY="100.0" prefHeight="399.0" prefWidth="223.0">
+               <children>
+                  <Button fx:id="GoToAddCostumers" layoutX="3.0" layoutY="57.0" mnemonicParsing="false" onAction="#GoToAddCostumers" prefHeight="56.0" prefWidth="233.0" style="-fx-background-color: #feed01;" text="Add Costumers" textFill="#1357b5">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="49.0" layoutX="14.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/person+target+user+icon-1320190816206266307.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="3.0" layoutY="167.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="233.0" style="-fx-background-color: #feed01;" text="Fees" textFill="#1357b5">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="19.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/6174016871582884288-512.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="GoToCheckCostumers" layoutX="3.0" layoutY="113.0" mnemonicParsing="false" onAction="#GoToCheckCostumers" prefHeight="56.0" prefWidth="233.0" style="-fx-background-color: #feed01;" text="Check Costumers" textFill="#1357b5">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="49.0" layoutX="14.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/table-icon-png-2.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="GotoSearchCostumer" layoutX="4.0" layoutY="223.0" mnemonicParsing="false" onAction="#GotoSearchCostumer" prefHeight="56.0" prefWidth="233.0" style="-fx-background-color: #feed01;" text="Search Costumer" textFill="#1357b5">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="19.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/blue-search-icon-8.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="576.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="3.0" prefHeight="116.0" prefWidth="568.0" style="-fx-background-color: #003176;">
+               <children>
+                  <Label layoutX="21.0" layoutY="33.0" text="Calculate Fees:" textFill="WHITE">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="3.0" layoutY="116.0" prefHeight="383.0" prefWidth="568.0">
+               <children>
+                  <Label layoutX="54.0" layoutY="71.0" text="Car Year of Manufacture:" textFill="#003176">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="157.0" text=" Number of Horses:" textFill="#003176">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="year" alignment="CENTER" layoutX="332.0" layoutY="75.0" prefHeight="29.0" prefWidth="161.0" promptText="Year of Manufacture" />
+                  <TextField fx:id="horses" alignment="CENTER" layoutX="278.0" layoutY="161.0" prefHeight="29.0" prefWidth="215.0" promptText="Number of Horses" />
+                  <Button layoutX="221.0" layoutY="217.0" mnemonicParsing="false" onAction="#calculateFees" prefHeight="31.0" prefWidth="114.0" text="Calculate Fees" textFill="#003176">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="48.0" layoutY="276.0" text="Fees needed to be paid:" textFill="#ff0909">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="result" layoutX="327.0" layoutY="276.0" textFill="RED">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Mar 22 19:17:00 EET 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-017f-b2a1-be35-00000331ebd0 
+on database directory C:\Users\Asus\eclipse-workspace\FCR\customersa12db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@531be3c5 
+Loaded from file:/C:/Users/Asus/eclipse-workspace/FCR/library/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=16.0.1+9-24
+user.dir=C:\Users\Asus\eclipse-workspace\FCR
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
